@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list-allproduct</title>
+    <link rel="stylesheet" href="./head&foot/header.css">
+    <link rel="stylesheet" href="./head&foot/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        article {
+            margin: 50px;
+        }
+
+        section {
+            display: inline-block;
+            position: absolute;
+            margin: 20px 100px 0px 20px;
+        }
+
+        section li {
+            list-style-type: none;
+            border-bottom: 1px solid black;
+            padding: 20px;
+        }
+        section a:hover{
+            color: rgba(122, 76, 55, 1);
+        }
+
+        section a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+
+        table {
+            display: inline-flex;
+            position: relative;
+            left: 15rem;
+        }
+
+        th {
+            text-align: start;
+            font-size: 30px;
+            padding: 20px;
+        }
+        figure{
+            width: 20rem;
+            position: relative;
+        }
+
+        figure a {
+            text-decoration: none;
+            color: rgba(122, 76, 55, 1);
+            font-size: 18px;
+        }
+
+        figure img {
+            width: 100%;
+        }
+        .seemore{
+            font-size: 20px;
+            background-color: rgba(122, 76, 55, 1);
+            color: rgba(224, 209, 202, 1);
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            visibility: hidden;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 90px;
+        }
+
+        figure:hover .seemore{
+            visibility:visible;
+            transition-duration: 3s;
+            transition-property: background-color;
+            transition-timing-function: linear;
+        }
+        figcaption>p{
+            margin-bottom: 0em;
+        }
+        .price{
+            display: inline-block;
+            margin-left: 10em;
+            margin-top: 0em;
+        }
+        .rawprice{
+            display: inline-block;
+            font-size: 16px;
+            color: rgba(116, 133, 148, 1);
+            text-decoration: line-through;
+            margin-top: 0em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>clothes</h1>
+        <div>
+            <input type="text" placeholder="search">
+            <a href=""><i class="bi bi-search icon"></i></a>
+            <a href="./login.html"><i class="bi bi-person-fill icon"></i></a>
+            <a href=""><i class="bi bi-cart4 icon"></i></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./alllist.html">所有商品</a></li>
+                <li><a href="">最新商品</a></li>
+                <li><a href="">品牌總覽</a></li>
+                <li><a href="">about us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <hr>
+
+
+    <article>
+        <section>
+            <ul>
+                <li><a href="">3CE</a></li>
+                <br>
+                <li><a href="">rom&nd</a></li>
+                <br>
+                <li><a href="">innisfree</a></li>
+                <br>
+                <li><a href="">espoir</a></li>
+            </ul>
+        </section>
+
+        <table>
+            <tr>
+                <th>Rom&nd</th>
+            </tr>
+            <tr>
+                <td>
+                    <figure>
+                        <a href="./product/romand/romand_1.html">
+                            <img src="./product/romand/rom&and_img/romand powder-1-1.jpg" alt="">
+                            <figcaption class="seemore">
+                                查看詳情
+                                <i class="bi bi-plus-circle"></i>
+                            </figcaption>
+                            <figcaption>
+                                <b>【Romand】NU ZERO 氣墊粉餅</b>
+                                <p class="price">NT $240</p>
+                                <p class="rawprice">NT $520</p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </td>
+            </tr>
+        </table>
+    </article>
+
+
+    <footer>
+        <h2>logo</h2>
+        <div>
+            <a href=""><i class="bi bi-envelope-open"></i></a>
+            <a href=""><i class="bi bi-line"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+        </div>
+        <p>周一 - 周五 0800AM-1700PM/tel:04-********/fax:********</p>
+        <p>台中市南屯區公益路</p>
+        <br><br>
+        <p>2024 logo.ALL Rights Reserved</p>
+        <p id="company">國際有限公司|統編********</p>
+    </footer>
+    <!--hover特效-->
+</body>
+
+</html>

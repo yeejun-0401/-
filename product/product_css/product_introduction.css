@@ -1,0 +1,108 @@
+ /*商品介紹*/
+ #top {
+     width: 35em;
+     margin-bottom: 20px;
+ }
+
+ .content {
+     width: 10em;
+     margin-right: 20px;
+ }
+
+ div>h3 {
+     font-size: 45px;
+     color: rgba(122, 76, 55, 1);
+ }
+
+ #product {
+     display: flex;
+     justify-content: center;
+     padding-top: 60px;
+     padding-bottom: 60px;
+ }
+
+ .introduction {
+     padding: 40px;
+     
+ }
+
+ .flex {
+     display: flex;
+     align-items: center;
+     padding-left: 30px;
+ }
+
+ .flex i {
+     padding-right: 15px;
+     font-size: 25px;
+ }
+
+ .flex p {
+     padding-left: 20px;
+     font-size: 20px;
+ }
+
+ #price {
+     color: rgba(122, 76, 55, 1);
+     font-size: 36px;
+     padding-right: 10px;
+ }
+
+ #rawprice {
+     color: rgba(116, 133, 148, 1);
+     text-decoration: line-through;
+     font-size: 25px;
+ }
+ /* 色號 */
+ #choice{
+    background-color: rgba(224, 209, 202, 1);
+    border: transparent;
+    width: 30rem;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 10rem;
+ }
+ #choice:hover{
+    color: rgba(122, 76, 55, 1);
+ }
+
+ /* 數量 */
+ .plus_minus {
+     border: 0px;
+     background-color: transparent;
+     font-size: 30px;
+     color: rgba(122, 76, 55, 1);
+     margin: 40px 60px 60px 0px;
+ }
+
+ .plus_minus:hover {
+     cursor: pointer;
+ }
+
+ #number {
+     display: flex;
+     justify-content: center;
+ }
+
+ #num {
+     width: 40px;
+ }
+
+ /* 加入購物車 */
+ .buy {
+     background-color: rgba(122, 76, 55, 1);
+     color: rgba(224, 209, 202, 1);
+     font-size: 20px;
+     border: transparent;
+     border-radius: 20px;
+     width: 15rem;
+     height: 5rem;
+     display: inline-block;
+     margin: 0px 60px;
+ }
+
+ .buy:hover {
+     cursor: pointer;
+     background-color: rgba(224, 209, 202, 1);
+     color: rgba(122, 76, 55, 1);
+ }

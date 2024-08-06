@@ -1,0 +1,86 @@
+/* 卡片 */
+.contain {
+    display: flexbox;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+}
+
+.card_group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    border: 1px solid rgba(122, 76, 55, 1);
+    background-color: rgba(224, 209, 202, 1);
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    color: rgba(122, 76, 55, 1);
+    text-align: center;
+    padding: 0px 40px 30px;
+    width: 25rem;
+}
+
+.card h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin: 0px 10px;
+}
+
+.card b {
+    font-size: 45px;
+    padding: 0px 5px 0px 10px;
+}
+
+.go {
+    border: transparent;
+    border-radius: 20px;
+    background-color: white;
+    color: rgba(122, 76, 55, 1);
+    font-size: 20px;
+    padding: 10px;
+}
+
+.go:hover {
+    cursor: pointer;
+}
+
+.dark_card {
+    border: 1px solid rgba(224, 209, 202, 1);
+    background-color: rgba(122, 76, 55, 1);
+    display: flex;
+    justify-content: space-evenly;
+    color: rgba(224, 209, 202, 1);
+    text-align: center;
+    padding: 20px;
+}
+
+.dark_card p {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark_card h3 {
+    font-size: 30px;
+    margin: 10px;
+}
+
+.dark_card i {
+    font-size: 40px;
+}
+
+.round {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 1px solid;
+    /* margin: auto; */
+}

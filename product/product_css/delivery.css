@@ -1,0 +1,34 @@
+.delivery{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.delivery b{
+    font-size: 20px;
+}
+.delivery li{
+    font-size: 20px;
+}
+ul li {
+    margin: 20px;
+}
+
+.pay {
+    border-collapse: collapse;
+    text-align: center;
+    /* margin: 20px; */
+    margin-bottom: 0px;
+    color: rgba(122, 76, 55, 1);
+}
+
+.theme {
+    background-color: rgba(224, 209, 202, 1);
+    font-size: 20px;
+    color: rgba(122, 76, 55, 1);
+}
+
+.pay td {
+    border-bottom: 1px solid;
+    font-size: 16px;
+    padding: 20px;
+}

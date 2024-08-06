@@ -1,0 +1,19 @@
+.lab_group{
+    display: flex;
+    justify-content: center;
+}
+.lab_card{
+    background-color: rgba(122, 76, 55, 1);
+    color: rgba(224, 209, 202, 1);
+    width: 20rem;
+    height: 20rem;
+}
+.lab_card h3{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+}
+.lab_card a{
+    text-decoration: none;
+    color: rgba(224, 209, 202, 1);
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <!-- <link rel="stylesheet" href="./head&foot/header.css"> -->
+    <!-- <link rel="stylesheet" href="./head&foot/footer.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        /* 卡片 */
+        .card-group{
+            display: flex;
+            /* margin-left: auto; */
+
+        }
+        .card {
+            border: 1px solid rgba(122, 76, 55, 1);
+            background-color: rgba(224, 209, 202, 1);
+            display: inline-block;
+            margin: 0;
+            color: rgba(122, 76, 55, 1);
+            text-align: center;
+            padding: 0px 40px 30px;
+            width: 33%;
+        }
+
+        .card h3 {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            margin: 0px 10px;
+        }
+
+        .card b {
+            font-size: 45px;
+            padding: 0px 5px 0px 10px;
+        }
+
+        .go {
+            border: transparent;
+            border-radius: 20px;
+            background-color: white;
+            color: rgba(122, 76, 55, 1);
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .go:hover {
+            cursor: pointer;
+        }
+
+        .dark_card {
+            border: 1px solid rgba(224, 209, 202, 1);
+            background-color: rgba(122, 76, 55, 1);
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            color: rgba(224, 209, 202, 1);
+            text-align: center;
+            padding: 0px 40px 30px;
+        }
+
+        .dark_card p {
+            font-size: 20px;
+        }
+
+        .dark_card h3 {
+            font-size: 25px;
+            margin: 10px;
+        }
+
+        .dark_card i {
+            font-size: 40px;
+        }
+
+        .round {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            border: 1px solid;
+            /* margin: auto; */
+        }
+
+        /* writing-mode: vertical-rl 
+           word-wrap*/
+    </style>
+</head>
+
+<body>
+    <!-- 卡片 -->
+    <section>
+        <div class="card-group">
+            <div class="card">
+                <h3>新品上市</h3>
+                <p>滿額最高折抵</p>
+                <span>NT</span><b>$500</b>
+                <br>
+                <button class="go">去逛逛 ></button>
+            </div>
+
+            <div class="card" style="margin-top:0 ;">
+                <h3>APP首下載禮</h3>
+                <span>NT</span><b>$200</b>
+                <span style=" writing-mode: vertical-rl;font-size: 14px;">優惠券</span>
+                <br>
+                <button class="go">立即下載 ></button>
+            </div>
+
+            <div class="card">
+                <h3>LINE綁定獨享</h3>
+                <span>NT</span><b>$200</b>
+                <span style=" writing-mode: vertical-rl; font-size: 14px;">優惠券</span>
+                <br>
+                <button class="go">立即綁定 ></button>
+            </div>
+        </div>
+
+        <div class="dark_card">
+            <p class="round"><i class="bi bi-cake"></i></p>
+            <p>生日禮遇</p>
+            <p class="round"><i class="bi bi-cash-coin"></i></p>
+            <p>升等禮券</p>
+            <p class="round"><i class="bi bi-bag-heart"></i></p>
+            <p>購物優惠</p>
+            <div>
+                <h3>2024全新會員權益</h3>
+                <button class="go">see more ></button>
+            </div>
+        </div>
+    </section>
+
+    <section></section>
+
+</body>
+
+</html>

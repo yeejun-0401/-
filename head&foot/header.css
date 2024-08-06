@@ -1,0 +1,36 @@
+h1{
+    color: rgba(122, 76, 55, 1);
+    position: relative;
+    left: 20px;
+    top: 10px;
+    font-size: 56px;
+}
+header>div{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+.icon{
+    font-size: 30px;
+    color: rgba(122, 76, 55, 1);
+    padding: 5px;
+}
+nav{
+    /* text-align: center;
+    justify-content: center; */
+}
+nav li{
+    list-style-type: none;
+    padding: 10rem;
+    display: inline;
+}
+nav li a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+}
+nav li a:hover{
+    color: rgba(220, 161, 108, 1);
+    cursor: pointer;
+}

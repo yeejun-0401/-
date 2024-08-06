@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>romand_1</title>
+    <link rel="stylesheet" href="../../head&foot/header.css">
+    <link rel="stylesheet" href="../../head&foot/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../product_css/product_introduction.css">
+    <link rel="stylesheet" href="../product_css/delivery.css">
+    <link rel="stylesheet" href="../product_css/more_product.css">
+    <style>
+        /*deatil*/
+        .detail_theme {
+            background-color: rgba(231, 226, 219, 0.64);
+        }
+
+        #Tabset {
+            display: flex;
+            margin: 0px auto 0px auto;
+            justify-content: center;
+        }
+
+        #Tabset h4 {
+            font-size: 30px;
+            padding: 20px;
+            margin: 5rem;
+        }
+
+        #Tabset h4:hover {
+            border-bottom: 3px solid rgba(122, 76, 55, 1);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>logo</h1>
+        <div>
+            <input type="text" placeholder="search">
+            <a href=""><i class="bi bi-search icon"></i></a>
+            <a href="./login.html"><i class="bi bi-person-fill icon"></i></a>
+            <a href=""><i class="bi bi-cart4 icon"></i></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./alllist.html">所有商品</a></li>
+                <li><a href="">最新商品</a></li>
+                <li><a href="">品牌總覽</a></li>
+                <li><a href="">about us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+
+    <article>
+        <section id="product">
+            <div>
+                <img src="../romand/rom&and_img/romand powder-1-1.jpg" id="top">
+                <br>
+                <img src="../romand/rom&and_img/romand powder-1-1.jpg" class="content" onclick="img_1()">
+                <img src="../romand/rom&and_img/romand powder1-2.jpg" class="content" onclick="img_2()">
+                <img src="../romand/rom&and_img/romand powder1-8.jpg" class="content" onclick="img_3()">
+            </div>
+            <div class="introduction">
+                <h3>【Romand】NU ZERO 氣墊粉餅</h3>
+                <div class="flex">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill" style="border-right: 1px solid;"></i>
+                    <p>10個評價/已售出200</p>
+                </div>
+                <div>
+                    <div class="flex">
+                        <b id="price">NT $240</b>
+                        <p id="rawprice">NT $520</p>
+                    </div>
+
+                    <p>顏色:</p>
+                    <!-- 顏色選單 -->
+                    <select name="color" id="choice">
+                        <option value="01">#01 Porcelain17</option>
+                        <option value="02">#02 Pure21</option>
+                        <option value="03">#03 Nature21</option>
+                        <option value="04">#04 Beige23</option>
+                    </select>
+
+                    <p>數量:</p>
+                    <!-- 數量鈕 -->
+                    <div id="number">
+                        <button class="plus_minus" onclick="minus()"><i class="bi bi-dash-circle-fill"></i></button>
+                        <input type="text" value="1" class="plus_minus" id="num">
+                        <button class="plus_minus" onclick="plus()"><i class="bi bi-plus-circle-fill"></i></button>
+                    </div>
+
+                    <!-- 購買鍵 -->
+                    <span style="display: inline-flex; padding: 30px;">
+                        <button class="buy">
+                            <p class="bi bi-cart4"><b>加入購物車</b>
+                        </button>
+                        <button class="buy">
+                            <p class="bi bi-bag"><b>立即購買</b></p>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <!-- 格式待調整 -->
+
+        <section class="detail_theme">
+            <div id="Tabset">
+                <span>
+                    <h4>商品介紹</h4>
+                </span>
+                <span>
+                    <h4>網友評價</h4>
+                </span>
+                <span>
+                    <h4>商品配送資訊</h4>
+                </span>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <img src="../romand/rom&and_img/romand powder1-3.jpg">
+            </div>
+            <div class="delivery">
+                <ol>
+                    <li><b>配送方式</b>
+                        <p>超商取貨或宅配到府</p>
+                    </li>
+                    <li><b>運費計算方式</b>
+                        <ul>
+                            <li>
+                                <p>超商取貨</p>
+                                <table class="pay">
+                                    <tr>
+                                        <th class="theme">地點</th>
+                                        <th class="theme">訂單金額</th>
+                                        <th class="theme">運費</th>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">本島各地、金門部分地區、澎湖部分地區、小琉球、馬祖全部地區、綠島</td>
+                                        <td>未滿1000元</td>
+                                        <td>60元</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1000元以上</td>
+                                        <td>免運費</td>
+                                    </tr>
+                                </table>
+                            </li>
+                            <li>宅配到府
+                                <table class="pay">
+                                    <tr>
+                                        <th class="theme">地點</th>
+                                        <th class="theme">訂單金額</th>
+                                        <th class="theme">運費</th>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">本島各地各縣市</td>
+                                        <td>未滿1000元</td>
+                                        <td>100元</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1000元以上</td>
+                                        <td>免運費</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">離島如金門部分地區、澎湖部分地區、小琉球、馬祖全部地區、綠島</td>
+                                        <td>未滿2500元</td>
+                                        <td>250</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2500元以上</td>
+                                        <td>免運費</td>
+                                    </tr>
+                                </table>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><b>注意事項</b>
+                        <p>受天候、交通狀況影響或假日訂單較多時可能會延遲出貨，敬請見諒</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <!-- 點擊事件待調整 -->
+
+        <!-- 更多商品 -->
+        <section id="relative">
+            <table>
+                <tr>
+                    <th colspan="3" id="more_product"><b>相關產品</b></th>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <a href="">
+                                <img src="../romand/rom&and_img/romand_base-1.jpg" alt="">
+                                <figcaption class="seemore">
+                                    查看詳情
+                                    <i class="bi bi-plus-circle"></i>
+                                </figcaption>
+                                <figcaption>
+                                    <p>【Romand】月亮修容盤</p>
+                                    <p class="price">NT $200</p>
+                                    <p class="rawprice">NT $420</p>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </td>
+                    <td>
+                        <figure>
+                            <a href="">
+                                <img src="../romand/rom&and_img/romand lip-1.jpg" alt="">
+                                <figcaption class="seemore">
+                                    查看詳情
+                                    <i class="bi bi-plus-circle"></i>
+                                </figcaption>
+                                <figcaption>
+                                    <p>【Romand】霧面奶茶唇釉</p>
+                                    <p class="price">NT $480</p>
+                                    <p class="rawprice">NT $540</p>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </td>
+                    <td>
+                        <figure>
+                            <a href="">
+                                <img src="../espoir/espoir_img/espoir powder-1.jpg" alt="">
+                                <figcaption class="seemore">
+                                    查看詳情
+                                    <i class="bi bi-plus-circle"></i>
+                                </figcaption>
+                                <figcaption>
+                                    <p>【Espoir】晶鑽水光粉底液</p>
+                                    <p class="price">NT $200</p>
+                                    <p class="rawprice">NT $420</p>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </article>
+    <!-- 圖片高度、hover待調整 -->
+
+    <footer>
+        <h2>logo</h2>
+        <div>
+            <a href=""><i class="bi bi-envelope-open"></i></a>
+            <a href=""><i class="bi bi-line"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+        </div>
+        <p>周一 - 周五 0800AM-1700PM/tel:04-********/fax:********</p>
+        <p>台中市南屯區公益路</p>
+        <br><br>
+        <p>2024 logo.ALL Rights Reserved</p>
+        <p id="company">國際有限公司|統編********</p>
+    </footer>
+
+
+
+
+    <script>
+
+        // 點擊圖片
+        function img_1() {
+            document.getElementById("top").src = "../romand/rom&and_img/romand powder-1-1.jpg";
+        }
+        function img_2() {
+            document.getElementById("top").src = "../romand/rom&and_img/romand powder1-2.jpg";
+        }
+        function img_3() {
+            document.getElementById("top").src = "../romand/rom&and_img/romand powder1-8.jpg";
+        }
+
+
+        // 數量選單
+        let n = document.getElementById("num").value;
+        function plus() {
+            n = document.getElementById("num").value;
+            n++;
+            console.log(n);
+            document.getElementById("num").value = n;
+        }
+        function minus() {
+            n = document.getElementById("num").value;
+            n--;
+            if (n == 0) {
+                alert("確定要移出購物車?");
+            } else {
+                console.log(n);
+            }
+            document.getElementById("num").value = n;
+        }
+    </script>
+
+</body>
+
+</html>
