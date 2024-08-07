@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>romand_2</title>
+    <title>skinfood_2</title>
     <link rel="stylesheet" href="../../head&foot/header.css">
     <link rel="stylesheet" href="../../head&foot/footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -61,14 +61,13 @@
     <article>
         <section id="product">
             <div>
-                <img src="../romand/rom&and_img/romand lip-1.jpg" id="top">
+                <img src="../skinfood/skinfood_img/skinfood_acorn-1.png" id="top">
                 <br>
-                <img src="../romand/rom&and_img/romand lip-1.jpg" class="content" onclick="img_1()">
-                <img src="../romand/rom&and_img/romand lip-2.jpg" class="content" onclick="img_2()">
-                <img src="../romand/rom&and_img/romand lip-5.jpg" class="content" onclick="img_3()">
+                <img src="../skinfood/skinfood_img/skinfood_acorn-1.png" class="content" onclick="img_1()">
+                <img src="../skinfood/skinfood_img/skinfood_acorn-2.png" class="content" onclick="img_2()">
             </div>
             <div class="introduction">
-                <h3>【Romand】霧面奶茶唇釉</h3>
+                <h3>【SkinFood】胡蘿蔔鎮定爽膚棉片</h3>
                 <div class="flex">
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
@@ -79,17 +78,15 @@
                 </div>
                 <div>
                     <div class="flex">
-                        <b id="price">NT $480</b>
-                        <p id="rawprice">NT $540</p>
+                        <b id="price">NT $476</b>
+                        <p id="rawprice">NT $840</p>
                     </div>
 
                     <p>顏色:</p>
                     <!-- 顏色選單 -->
                     <select name="color" id="choice">
-                        <option value="05">#05 Vanilla Tea</option>
-                        <option value="06">#06 Jasmine Tea</option>
-                        <option value="07">#07 Rose Tea</option>
-                        <option value="08">#08 Earl Gery Tea</option>
+                        <option value="40">小容量 40ml</option>
+                        <option value="70">大容量 70ml</option>
                     </select>
 
                     <p>數量:</p>
@@ -127,7 +124,7 @@
                 </span>
             </div>
             <div style="display: flex; justify-content: center;">
-                <img src="../romand/rom&and_img/romand lip-3.jpg">
+                <img src="../skinfood/skinfood_img/skinfood_acorn-3.jpg">
             </div>
             <div class="delivery">
                 <ol>
@@ -201,16 +198,16 @@
                 <tr>
                     <td>
                         <figure>
-                            <a href="../romand/romand_3.html">
-                                <img src="../romand/rom&and_img/romand_base-1.jpg" alt="">
+                            <a href="../skinfood/skinfood_1.html">
+                                <img src="../skinfood/skinfood_img/220318_carrotpad_3.png" alt="">
                                 <figcaption class="seemore">
                                     查看詳情
                                     <i class="bi bi-plus-circle"></i>
                                 </figcaption>
                                 <figcaption>
-                                    <p>【Romand】月亮修容盤</p>
-                                    <p class="price">NT $269</p>
-                                    <p class="rawprice">NT $599</p>
+                                    <p>【SkinFood】胡蘿蔔鎮定爽膚棉片</p>
+                                    <p class="price">NT $430</p>
+                                    <p class="rawprice">NT $975</p>
                                 </figcaption>
                             </a>
                         </figure>
@@ -269,39 +266,30 @@
     </footer>
 
 
-
-
+    <script src="../product_js/addproduct.js"></script>
     <script>
-
-        // 點擊圖片
+        //點圖
         function img_1() {
-            document.getElementById("top").src = "../romand/rom&and_img/romand lip-1.jpg";
+            document.getElementById("top").src = "../skinfood/skinfood_img/skinfood_acorn-1.png";
         }
         function img_2() {
-            document.getElementById("top").src = "../romand/rom&and_img/romand lip-2.jpg";
-        }
-        function img_3() {
-            document.getElementById("top").src = "../romand/rom&and_img/romand lip-5.jpg";
+            document.getElementById("top").src = "../skinfood/skinfood_img/skinfood_acorn-2.png";
         }
 
 
-        // 數量選單
-        let n = document.getElementById("num").value;
-        function plus() {
-            n = document.getElementById("num").value;
-            n++;
-            console.log(n);
-            document.getElementById("num").value = n;
-        }
-        function minus() {
-            n = document.getElementById("num").value;
-            n--;
-            if (n == 0) {
-                alert("確定要移出購物車?");
-            } else {
-                console.log(n);
+        //不同選項不同價錢
+        document.getElementById("choice").addEventListener('change',changePrice);
+
+        function changePrice(){
+            let x = document.getElementById("choice").value
+
+            if (x=="40"){
+                document.getElementById("price").innerText = "NT $476"
+                document.getElementById("rawprice").innerText = "NT $840"
+            }else{
+                document.getElementById("price").innerText = "NT $676"
+                document.getElementById("rawprice").innerText = "NT $1040"
             }
-            document.getElementById("num").value = n;
         }
     </script>
 

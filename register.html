@@ -11,12 +11,9 @@
     <style>
         table{
             border-collapse:collapse;
-            margin: auto;
-            margin-top: 150px;
-            margin-bottom: 200px;
+            margin: 150px auto 200px auto;
             width: 50%;
             text-align: center;
-            width: 50%;
         }
         td{
             border: 3px solid rgba(217, 217, 217, 1);
@@ -26,15 +23,23 @@
             margin: 20px;
             line-height: 30px;
         }
+        .data{
+            width: 50%;
+            font-size: 16px;
+            padding: 5px;
+            margin: 10px;
+        }
         .more{
             text-decoration: none;
             color: rgba(188, 193, 197, 1);
             border-right: 1px solid rgba(188, 193, 197, 1);
             padding-right: 10px;
+            font-size: 18px;
         }
         .info1{
             display: inline-block;
             padding-left: 80px;
+            padding-bottom: 15px;
         }
         .info2{
             display: inline-block;
@@ -90,16 +95,15 @@
         <tr>
             <td colspan="2">
                 <form action="">
-                    <input type="text" placeholder="用戶名">
+                    <input type="text" placeholder="用戶名" class="data">
                     <br>
-                    <select name="ID" id="ID"><!--下拉式選單改變後面選擇-->
-                        <option value="email">使用email註冊</option>
-                        <option value="phone" onclick="Phone">使用手機註冊</option>
+                    <select name="ID" id="changeoption" class="data"><!--下拉式選單改變後面選擇-->
+                        <option value="1" id="email">使用email註冊</option>
+                        <option value="2">使用手機註冊</option>
                     </select>
                     <br>
-                    <input type="email" placeholder="請輸入電子信箱" id="changePhone">
-                    <br>
-                    <input type="password" placeholder="請輸入密碼(至少8字元)">
+                    <div id="changePhone"></div>
+                    <input type="password" placeholder="請輸入密碼(至少8字元)" class="data">
 
                     <br><br>
                     <input type="checkbox">我願意訂閱電子報，接受最新消息
@@ -142,12 +146,22 @@
 
 
     <script>
+        //切換註冊方式(手機/信箱)
+        let c = document.getElementById("changeoption");
+        console.log(c);
+        c.addEventListener('change',Phone);
+        
+        document.getElementById("changePhone").innerHTML = "<input type='email' placeholder='請輸入電子信箱' class='data'>";
+        
         function Phone(){
-            var a =document.createElement("input");
-            console.log(a);
-            a.setAttribute("type","tel");
-            document.getElementById(changePhone).innerHTML = a;
-            
+            let e = document.getElementById("changeoption").value; 
+            //取得select的id而非option，因option的value值是固定，進入if判斷式結果不會改變
+            //使用innerHTML，createElement會無限增加
+            if(parseInt(e)==1){
+                document.getElementById("changePhone").innerHTML = "<input type='email' placeholder='請輸入電子信箱' class='data'>";
+            }else{
+                document.getElementById("changePhone").innerHTML = "<input type='tel' placeholder='請輸入手機號碼' class='data'>";
+            }
         }
     </script>
 </body>

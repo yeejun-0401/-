@@ -1,12 +1,19 @@
  /*商品介紹*/
  #top {
      width: 35em;
+     height: 35em;
      margin-bottom: 20px;
  }
-
+#top:hover{
+    cursor: pointer;
+}
  .content {
      width: 10em;
+     height: 10em;
      margin-right: 20px;
+ }
+ .content:hover{
+    cursor: pointer;
  }
 
  div>h3 {
