@@ -2,8 +2,8 @@
 .contain {
     display: flexbox;
     flex-direction: column;
-    margin: auto;
-    width: 80%;
+    margin: 0px auto;
+    width: 85%;
 }
 
 .card_group {
@@ -19,7 +19,7 @@
     margin-left: 5px;
     color: rgba(122, 76, 55, 1);
     text-align: center;
-    padding: 0px 40px 30px;
+    padding: 10px 40px 30px;
     width: 25rem;
 }
 
@@ -44,6 +44,7 @@
     background-color: white;
     color: rgba(122, 76, 55, 1);
     font-size: 20px;
+    margin-top: 15px;
     padding: 10px;
 }
 
@@ -58,7 +59,7 @@
     justify-content: space-evenly;
     color: rgba(224, 209, 202, 1);
     text-align: center;
-    padding: 20px;
+    padding: 40px;
 }
 
 .dark_card p {

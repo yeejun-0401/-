@@ -12,14 +12,22 @@
     <link rel="stylesheet" href="../product/product_css/more_product.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
-        #new{
+        .ad {
+            background-image: url(../img/back.png);
+            height: 70rem;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.7;
+        }
+
+        #new {
             background-color: rgba(231, 226, 219, 1);
             padding-bottom: 60px;
         }
-        #new>table{
+
+        #new>table {
             margin: 0px auto 0px auto;
         }
-
     </style>
 </head>
 
@@ -42,53 +50,61 @@
         </nav>
     </header>
 
+    <!-- 首頁圖 -->
+    <section class="ad">
+        <p>歡慶七夕</p>
+        <p>官網限定優惠</p>
+    </section>
+
 
     <!-- 卡片 -->
-    <div class="contain">
-        <div class="card_group">
-            <div class="card">
-                <h3>新品上市</h3>
-                <p>滿額最高折抵</p>
-                <span>NT</span><b>$500</b>
-                <br>
-                <button class="go">去逛逛 ></button>
+    <div style="background-color: rgba(231, 226, 219, 1);padding: 60px;">
+        <div class="contain">
+            <div class="card_group">
+                <div class="card">
+                    <h3>新品上市</h3>
+                    <p>滿額最高折抵</p>
+                    <span>NT</span><b>$500</b>
+                    <br>
+                    <button class="go">去逛逛 ></button>
+                </div>
+
+                <div class="card">
+                    <h3>APP首下載禮</h3>
+                    <span>NT</span><b>$200</b>
+                    <span style=" writing-mode: vertical-rl;font-size: 14px;">優惠券</span>
+                    <br>
+                    <button class="go">立即下載 ></button>
+                </div>
+
+                <div class="card">
+                    <h3>LINE綁定獨享</h3>
+                    <span>NT</span><b>$200</b>
+                    <span style=" writing-mode: vertical-rl; font-size: 14px;">優惠券</span>
+                    <br>
+                    <button class="go">立即綁定 ></button>
+                </div>
             </div>
 
-            <div class="card">
-                <h3>APP首下載禮</h3>
-                <span>NT</span><b>$200</b>
-                <span style=" writing-mode: vertical-rl;font-size: 14px;">優惠券</span>
-                <br>
-                <button class="go">立即下載 ></button>
-            </div>
-
-            <div class="card">
-                <h3>LINE綁定獨享</h3>
-                <span>NT</span><b>$200</b>
-                <span style=" writing-mode: vertical-rl; font-size: 14px;">優惠券</span>
-                <br>
-                <button class="go">立即綁定 ></button>
-            </div>
-        </div>
-
-        <div class="dark_card">
-            <p class="round"><i class="bi bi-cake"></i></p>
-            <p>生日禮遇</p>
-            <p class="round"><i class="bi bi-cash-coin"></i></p>
-            <p>升等禮券</p>
-            <p class="round"><i class="bi bi-bag-heart"></i></p>
-            <p>購物優惠</p>
-            <div>
-                <h3>2024全新會員權益</h3>
-                <button class="go">see more ></button>
+            <div class="dark_card">
+                <p class="round"><i class="bi bi-cake"></i></p>
+                <p>生日禮遇</p>
+                <p class="round"><i class="bi bi-cash-coin"></i></p>
+                <p>升等禮券</p>
+                <p class="round"><i class="bi bi-bag-heart"></i></p>
+                <p>購物優惠</p>
+                <div>
+                    <h3>2024全新會員權益</h3>
+                    <button class="go">see more ></button>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- 品牌總覽 
      滑鼠滑過會有卡片(有斜角)顯示品牌名稱及查看更多連結-->
-    <section id="bestlab">
-        <h3>精選品牌Best labels</h3>
+    <!-- <section id="bestlab">
+        <h3 style="margin: 0px;">精選品牌Best labels</h3>
         <div class="lab_group">
             <div class="lab" id="romand">
                 <img src="../product/3ce/3CE_img/3ce.jpg">
@@ -121,7 +137,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- 新品上架 -->
     <section id="new">

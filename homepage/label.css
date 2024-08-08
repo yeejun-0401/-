@@ -1,7 +1,9 @@
+#bestlab{
+    background-color: rgba(231, 226, 219, 1);
+}
 .lab_group{
     display: flex;
     justify-content: center;
-    /* margin: 20px; */
 }
 .lab_card{
     position: absolute;

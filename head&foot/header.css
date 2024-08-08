@@ -15,13 +15,9 @@ header>div{
     color: rgba(122, 76, 55, 1);
     padding: 5px;
 }
-nav{
-    /* text-align: center;
-    justify-content: center; */
-}
 nav li{
     list-style-type: none;
-    padding: 10rem;
+    padding: 9rem;
     display: inline;
 }
 nav li a{

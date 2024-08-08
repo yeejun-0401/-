@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3CE_1</title>
+    <title>3ce_2</title>
     <link rel="stylesheet" href="../../head&foot/header.css">
     <link rel="stylesheet" href="../../head&foot/footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -15,6 +15,7 @@
         /*deatil*/
         .detail_theme {
             background-color: rgba(231, 226, 219, 0.64);
+            margin-bottom: 0px;
         }
 
         #Tabset {
@@ -61,33 +62,35 @@
     <article>
         <section id="product">
             <div>
-                <img src="../3ce/3CE_img/3ce-powder-1.png" id="top">
+                <img src="../romand/rom&and_img/romand powder-1-1.jpg" id="top">
                 <br>
-                <img src="../3ce/3CE_img/3ce-powder-1.png" class="content" onclick="img_1()">
-                <img src="../3ce/3CE_img/3ce-powder-2.png" class="content" onclick="img_2()">
-                <img src="../3ce/3CE_img/3ce-powder-3.png" class="content" onclick="img_3()">
+                <img src="../romand/rom&and_img/romand powder-1-1.jpg" class="content" onclick="img_1()">
+                <img src="../romand/rom&and_img/romand powder1-2.jpg" class="content" onclick="img_2()">
+                <img src="../romand/rom&and_img/romand powder1-8.jpg" class="content" onclick="img_3()">
             </div>
             <div class="introduction">
-                <h3>【3CE】水潤氣墊粉餅</h3>
+                <h3>【3CE】九宮格眼影盤</h3>
                 <div class="flex">
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill" style="border-right: 1px solid;"></i>
-                    <p>0個評價/已售出50</p>
+                    <p>10個評價/已售出200</p>
                 </div>
                 <div>
                     <div class="flex">
-                        <b id="price">NT $850</b>
-                        <p id="rawprice">NT $1055</p>
+                        <b id="price">NT $240</b>
+                        <p id="rawprice">NT $520</p>
                     </div>
 
                     <p>顏色:</p>
                     <!-- 顏色選單 -->
                     <select name="color" id="choice">
-                        <option value="01">#Warm Ivory 暖象牙色</option>
-                        <option value="02">#Soft Nude 柔和裸色</option>
+                        <option value="01">#01 Porcelain17</option>
+                        <option value="02">#02 Pure21</option>
+                        <option value="03">#03 Nature21</option>
+                        <option value="04">#04 Beige23</option>
                     </select>
 
                     <p>數量:</p>
@@ -100,7 +103,7 @@
 
                     <!-- 購買鍵 -->
                     <span style="display: inline-flex; padding: 30px;">
-                        <button class="buy">
+                        <button class="buy" onclick="">
                             <p class="bi bi-cart4"><b>加入購物車</b>
                         </button>
                         <button class="buy" onclick="buynow()">
@@ -124,11 +127,8 @@
                     <h4>商品配送資訊</h4>
                 </span>
             </div>
-            <!-- 圖片置中 -->
-            <div style="display: flex; flex-direction: column; padding-bottom: 60px;width: 50%;margin: auto;" id="pic">
-                <img src="../3ce/3CE_img/3ce-powder-5.gif" style="width: 100%;">
-                <img src="../3ce/3CE_img/3ce-powder-6.jpg" style="width: 100%;">
-                <img src="../3ce/3CE_img/3ce-powder-7.jpg" style="width: 100%;">
+            <div style="display: flex; justify-content: center; padding-bottom: 60px;">
+                <img src="../romand/rom&and_img/romand powder1-3.jpg" id="pic">
             </div>
             <div id="com" style=" display: none;margin: 0px auto; padding-bottom: 60px;">
                 <p style="font-size: 20px; text-align: center;">尚無評價</p>
@@ -205,7 +205,25 @@
                 <tr>
                     <td>
                         <figure>
-                            <a href="../romand/romand_2.html">
+                            <a href="">
+                                <img src="../romand/rom&and_img/romand_base-1.jpg" alt="">
+                                <div class="overlay">
+                                    <figcaption class="seemore">
+                                        查看詳情
+                                        <i class="bi bi-plus-circle"></i>
+                                    </figcaption>
+                                </div>
+                                <figcaption>
+                                    <b>【Romand】月亮修容盤</b>
+                                    <p class="price">NT $200</p>
+                                    <p class="rawprice">NT $420</p>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </td>
+                    <td>
+                        <figure>
+                            <a href="">
                                 <img src="../romand/rom&and_img/romand lip-1.jpg" alt="">
                                 <div class="overlay">
                                     <figcaption class="seemore">
@@ -223,24 +241,6 @@
                     </td>
                     <td>
                         <figure>
-                            <a href="../romand/romand_1.html">
-                                <img src="../romand/rom&and_img/romand powder-1-1.jpg" alt="">
-                                <div class="overlay">
-                                    <figcaption class="seemore">
-                                        查看詳情
-                                        <i class="bi bi-plus-circle"></i>
-                                    </figcaption>
-                                </div>
-                                <figcaption>
-                                    <b>【Romand】NU ZERO 氣墊粉餅</b>
-                                    <p class="price">NT $240</p>
-                                    <p class="rawprice">NT $520</p>
-                                </figcaption>
-                            </a>
-                        </figure>
-                    </td>
-                    <td>
-                        <figure>
                             <a href="">
                                 <img src="../3ce/3CE_img/3ce-eye-1.jpg" alt="">
                                 <div class="overlay">
@@ -250,9 +250,9 @@
                                     </figcaption>
                                 </div>
                                 <figcaption>
-                                    <b>【3CE】九宮格眼影盤</b>
-                                    <p class="price">NT $769</p>
-                                    <p class="rawprice">NT $1480</p>
+                                    <b>【Espoir】晶鑽水光粉底液</b>
+                                    <p class="price">NT $200</p>
+                                    <p class="rawprice">NT $420</p>
                                 </figcaption>
                             </a>
                         </figure>
@@ -279,18 +279,23 @@
     </footer>
 
 
+
     <script src="../product_js/addproduct.js"></script>
     <script src="../product_js/changedetail.js"></script>
     <script>
+
+        // 點擊圖片
         function img_1() {
-            document.getElementById("top").src = "../3ce/3CE_img/3ce-powder-1.png";
+            document.getElementById("top").src = "../romand/rom&and_img/romand powder-1-1.jpg";
         }
         function img_2() {
-            document.getElementById("top").src = "../3ce/3CE_img/3ce-powder-2.png";
+            document.getElementById("top").src = "../romand/rom&and_img/romand powder1-2.jpg";
         }
         function img_3() {
-            document.getElementById("top").src = "../3ce/3CE_img/3ce-powder-3.png";
+            document.getElementById("top").src = "../romand/rom&and_img/romand powder1-8.jpg";
         }
+
+       
     </script>
 
 </body>
