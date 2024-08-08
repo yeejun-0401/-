@@ -50,7 +50,7 @@
                 <li><a href="./alllist.html">所有商品</a></li>
                 <li><a href="">最新商品</a></li>
                 <li><a href="">品牌總覽</a></li>
-                <li><a href="">about us</a></li>
+                <li><a href="../../notice.html">購物須知</a></li>
             </ul>
         </nav>
     </header>
@@ -105,7 +105,7 @@
                         <button class="buy">
                             <p class="bi bi-cart4"><b>加入購物車</b>
                         </button>
-                        <button class="buy">
+                        <button class="buy" onclick="buynow()">
                             <p class="bi bi-bag"><b>立即購買</b></p>
                         </button>
                     </span>
@@ -116,20 +116,23 @@
 
         <section class="detail_theme">
             <div id="Tabset">
-                <span>
+                <span id="poster">
                     <h4>商品介紹</h4>
                 </span>
-                <span>
+                <span id="comment">
                     <h4>網友評價</h4>
                 </span>
-                <span>
+                <span id="Delivery">
                     <h4>商品配送資訊</h4>
                 </span>
             </div>
-            <div style="display: flex; justify-content: center;">
-                <img src="../romand/rom&and_img/romand lip-3.jpg">
+            <div style="display: flex; justify-content: center; padding-bottom: 60px;">
+                <img src="../romand/rom&and_img/romand lip-3.jpg" id="pic">
             </div>
-            <div class="delivery">
+            <div id="com" style=" display: none;margin: 0px auto; padding-bottom: 60px;">
+                <p style="font-size: 20px; text-align: center;">尚無評價</p>
+            </div>
+            <div class="delivery" id="del">
                 <ol>
                     <li><b>配送方式</b>
                         <p>超商取貨或宅配到府</p>
@@ -203,12 +206,14 @@
                         <figure>
                             <a href="../romand/romand_3.html">
                                 <img src="../romand/rom&and_img/romand_base-1.jpg" alt="">
-                                <figcaption class="seemore">
-                                    查看詳情
-                                    <i class="bi bi-plus-circle"></i>
-                                </figcaption>
+                                <div class="overlay">
+                                    <figcaption class="seemore">
+                                        查看詳情
+                                        <i class="bi bi-plus-circle"></i>
+                                    </figcaption>
+                                </div>
                                 <figcaption>
-                                    <p>【Romand】月亮修容盤</p>
+                                    <b>【Romand】月亮修容盤</b>
                                     <p class="price">NT $269</p>
                                     <p class="rawprice">NT $599</p>
                                 </figcaption>
@@ -219,12 +224,14 @@
                         <figure>
                             <a href="../romand/romand_1.html">
                                 <img src="../romand/rom&and_img/romand powder-1-1.jpg" alt="">
-                                <figcaption class="seemore">
-                                    查看詳情
-                                    <i class="bi bi-plus-circle"></i>
-                                </figcaption>
+                                <div class="overlay">
+                                    <figcaption class="seemore">
+                                        查看詳情
+                                        <i class="bi bi-plus-circle"></i>
+                                    </figcaption>
+                                </div>
                                 <figcaption>
-                                    <p>【Romand】NU ZERO 氣墊粉餅</p>
+                                    <b>【Romand】NU ZERO 氣墊粉餅</b>
                                     <p class="price">NT $240</p>
                                     <p class="rawprice">NT $520</p>
                                 </figcaption>
@@ -235,12 +242,14 @@
                         <figure>
                             <a href="">
                                 <img src="../3ce/3CE_img/3ce-eye-1.jpg" alt="">
-                                <figcaption class="seemore">
-                                    查看詳情
-                                    <i class="bi bi-plus-circle"></i>
-                                </figcaption>
+                                <div class="overlay">
+                                    <figcaption class="seemore">
+                                        查看詳情
+                                        <i class="bi bi-plus-circle"></i>
+                                    </figcaption>
+                                </div>
                                 <figcaption>
-                                    <p>【3CE】九宮格眼影盤</p>
+                                    <b>【3CE】九宮格眼影盤</b>
                                     <p class="price">NT $769</p>
                                     <p class="rawprice">NT $1480</p>
                                 </figcaption>
@@ -270,7 +279,8 @@
 
 
 
-
+    <script src="../product_js/addproduct.js"></script>
+    <script src="../product_js/changedetail.js"></script>
     <script>
 
         // 點擊圖片
@@ -284,25 +294,6 @@
             document.getElementById("top").src = "../romand/rom&and_img/romand lip-5.jpg";
         }
 
-
-        // 數量選單
-        let n = document.getElementById("num").value;
-        function plus() {
-            n = document.getElementById("num").value;
-            n++;
-            console.log(n);
-            document.getElementById("num").value = n;
-        }
-        function minus() {
-            n = document.getElementById("num").value;
-            n--;
-            if (n == 0) {
-                alert("確定要移出購物車?");
-            } else {
-                console.log(n);
-            }
-            document.getElementById("num").value = n;
-        }
     </script>
 
 </body>

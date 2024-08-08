@@ -15,6 +15,7 @@
         /*deatil*/
         .detail_theme {
             background-color: rgba(231, 226, 219, 0.64);
+            margin-bottom: 0px;
         }
 
         #Tabset {
@@ -42,7 +43,7 @@
         <div>
             <input type="text" placeholder="search">
             <a href=""><i class="bi bi-search icon"></i></a>
-            <a href="./login.html"><i class="bi bi-person-fill icon"></i></a>
+            <a href="../../login.html"><i class="bi bi-person-fill icon"></i></a>
             <a href=""><i class="bi bi-cart4 icon"></i></a>
         </div>
         <nav>
@@ -50,7 +51,7 @@
                 <li><a href="./alllist.html">所有商品</a></li>
                 <li><a href="">最新商品</a></li>
                 <li><a href="">品牌總覽</a></li>
-                <li><a href="">about us</a></li>
+                <li><a href="../../notice.html">購物須知</a></li>
             </ul>
         </nav>
     </header>
@@ -102,10 +103,10 @@
 
                     <!-- 購買鍵 -->
                     <span style="display: inline-flex; padding: 30px;">
-                        <button class="buy">
+                        <button class="buy" onclick="">
                             <p class="bi bi-cart4"><b>加入購物車</b>
                         </button>
-                        <button class="buy">
+                        <button class="buy" onclick="buynow()">
                             <p class="bi bi-bag"><b>立即購買</b></p>
                         </button>
                     </span>
@@ -116,20 +117,23 @@
 
         <section class="detail_theme">
             <div id="Tabset">
-                <span>
+                <span id="poster">
                     <h4>商品介紹</h4>
                 </span>
-                <span>
+                <span id="comment">
                     <h4>網友評價</h4>
                 </span>
-                <span>
+                <span id="Delivery">
                     <h4>商品配送資訊</h4>
                 </span>
             </div>
-            <div style="display: flex; justify-content: center;">
-                <img src="../romand/rom&and_img/romand powder1-3.jpg">
+            <div style="display: flex; justify-content: center; padding-bottom: 60px;">
+                <img src="../romand/rom&and_img/romand powder1-3.jpg" id="pic">
             </div>
-            <div class="delivery">
+            <div id="com" style=" display: none;margin: 0px auto; padding-bottom: 60px;">
+                <p style="font-size: 20px; text-align: center;">尚無評價</p>
+            </div>
+            <div class="delivery" id="del">
                 <ol>
                     <li><b>配送方式</b>
                         <p>超商取貨或宅配到府</p>
@@ -203,12 +207,14 @@
                         <figure>
                             <a href="">
                                 <img src="../romand/rom&and_img/romand_base-1.jpg" alt="">
-                                <figcaption class="seemore">
-                                    查看詳情
-                                    <i class="bi bi-plus-circle"></i>
-                                </figcaption>
+                                <div class="overlay">
+                                    <figcaption class="seemore">
+                                        查看詳情
+                                        <i class="bi bi-plus-circle"></i>
+                                    </figcaption>
+                                </div>
                                 <figcaption>
-                                    <p>【Romand】月亮修容盤</p>
+                                    <b>【Romand】月亮修容盤</b>
                                     <p class="price">NT $200</p>
                                     <p class="rawprice">NT $420</p>
                                 </figcaption>
@@ -219,12 +225,14 @@
                         <figure>
                             <a href="">
                                 <img src="../romand/rom&and_img/romand lip-1.jpg" alt="">
-                                <figcaption class="seemore">
-                                    查看詳情
-                                    <i class="bi bi-plus-circle"></i>
-                                </figcaption>
+                                <div class="overlay">
+                                    <figcaption class="seemore">
+                                        查看詳情
+                                        <i class="bi bi-plus-circle"></i>
+                                    </figcaption>
+                                </div>
                                 <figcaption>
-                                    <p>【Romand】霧面奶茶唇釉</p>
+                                    <b>【Romand】霧面奶茶唇釉</b>
                                     <p class="price">NT $480</p>
                                     <p class="rawprice">NT $540</p>
                                 </figcaption>
@@ -234,13 +242,15 @@
                     <td>
                         <figure>
                             <a href="">
-                                <img src="../espoir/espoir_img/espoir powder-1.jpg" alt="">
-                                <figcaption class="seemore">
-                                    查看詳情
-                                    <i class="bi bi-plus-circle"></i>
-                                </figcaption>
+                                <img src="../3ce/3CE_img/3ce-eye-1.jpg" alt="">
+                                <div class="overlay">
+                                    <figcaption class="seemore">
+                                        查看詳情
+                                        <i class="bi bi-plus-circle"></i>
+                                    </figcaption>
+                                </div>
                                 <figcaption>
-                                    <p>【Espoir】晶鑽水光粉底液</p>
+                                    <b>【Espoir】晶鑽水光粉底液</b>
                                     <p class="price">NT $200</p>
                                     <p class="rawprice">NT $420</p>
                                 </figcaption>
@@ -270,7 +280,8 @@
 
 
 
-
+    <script src="../product_js/addproduct.js"></script>
+    <script src="../product_js/changedetail.js"></script>
     <script>
 
         // 點擊圖片
@@ -284,25 +295,7 @@
             document.getElementById("top").src = "../romand/rom&and_img/romand powder1-8.jpg";
         }
 
-
-        // 數量選單
-        let n = document.getElementById("num").value;
-        function plus() {
-            n = document.getElementById("num").value;
-            n++;
-            console.log(n);
-            document.getElementById("num").value = n;
-        }
-        function minus() {
-            n = document.getElementById("num").value;
-            n--;
-            if (n == 0) {
-                alert("確定要移出購物車?");
-            } else {
-                console.log(n);
-            }
-            document.getElementById("num").value = n;
-        }
+       
     </script>
 
 </body>

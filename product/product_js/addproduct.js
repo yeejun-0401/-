@@ -16,3 +16,8 @@ function minus() {
     }
     document.getElementById("num").value = n;
 }
+
+function buynow(){
+    alert('請先登入');
+    document.location.href = "../../login.html";
+}

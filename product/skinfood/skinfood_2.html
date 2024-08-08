@@ -67,7 +67,7 @@
                 <img src="../skinfood/skinfood_img/skinfood_acorn-2.png" class="content" onclick="img_2()">
             </div>
             <div class="introduction">
-                <h3>【SkinFood】胡蘿蔔鎮定爽膚棉片</h3>
+                <h3>【SkinFood】純素橡樹子毛孔胜肽乳霜</h3>
                 <div class="flex">
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
@@ -102,7 +102,7 @@
                         <button class="buy">
                             <p class="bi bi-cart4"><b>加入購物車</b>
                         </button>
-                        <button class="buy">
+                        <button class="buy" onclick="buynow()">
                             <p class="bi bi-bag"><b>立即購買</b></p>
                         </button>
                     </span>
@@ -113,20 +113,23 @@
 
         <section class="detail_theme">
             <div id="Tabset">
-                <span>
+                <span id="poster">
                     <h4>商品介紹</h4>
                 </span>
-                <span>
+                <span id="comment">
                     <h4>網友評價</h4>
                 </span>
-                <span>
+                <span id="Delivery">
                     <h4>商品配送資訊</h4>
                 </span>
             </div>
-            <div style="display: flex; justify-content: center;">
-                <img src="../skinfood/skinfood_img/skinfood_acorn-3.jpg">
+            <div style="display: flex; justify-content: center; padding-bottom: 60px;">
+                <img src="../skinfood/skinfood_img/skinfood_acorn-3.jpg" id="pic">
             </div>
-            <div class="delivery">
+            <div id="com" style=" display: none;margin: 0px auto; padding-bottom: 60px;">
+                <p style="font-size: 20px; text-align: center;">尚無評價</p>
+            </div>
+            <div class="delivery" id="del">
                 <ol>
                     <li><b>配送方式</b>
                         <p>超商取貨或宅配到府</p>
@@ -267,6 +270,7 @@
 
 
     <script src="../product_js/addproduct.js"></script>
+    <script src="../product_js/changedetail.js"></script>
     <script>
         //點圖
         function img_1() {

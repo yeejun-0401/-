@@ -5,17 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homepage</title>
-    <link rel="stylesheet" href="./head&foot/header.css">
-    <link rel="stylesheet" href="./head&foot/footer.css">
+    <link rel="stylesheet" href="../head&foot/header.css">
+    <link rel="stylesheet" href="../head&foot/footer.css">
     <link rel="stylesheet" href="./card.css">
     <link rel="stylesheet" href="./label.css">
+    <link rel="stylesheet" href="../product/product_css/more_product.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
+        #new{
+            background-color: rgba(231, 226, 219, 1);
+            padding-bottom: 60px;
+        }
+        #new>table{
+            margin: 0px auto 0px auto;
+        }
 
     </style>
 </head>
 
 <body>
+    <header>
+        <h1>logo</h1>
+        <div>
+            <input type="text" placeholder="search">
+            <a href=""><i class="bi bi-search icon"></i></a>
+            <a href="./login.html"><i class="bi bi-person-fill icon"></i></a>
+            <a href=""><i class="bi bi-cart4 icon"></i></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./alllist.html">所有商品</a></li>
+                <li><a href="#new">最新商品</a></li>
+                <li><a href="#bestlab">品牌總覽</a></li>
+                <li><a href="../notice.html">購物須知</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
     <!-- 卡片 -->
     <div class="contain">
         <div class="card_group">
@@ -60,18 +87,18 @@
 
     <!-- 品牌總覽 
      滑鼠滑過會有卡片(有斜角)顯示品牌名稱及查看更多連結-->
-    <section>
-        <h3>Best labels</h3>
+    <section id="bestlab">
+        <h3>精選品牌Best labels</h3>
         <div class="lab_group">
-            <div class="lab">
-                <img src="">
+            <div class="lab" id="romand">
+                <img src="../product/3ce/3CE_img/3ce.jpg">
                 <div class="lab_card">
                     <h3>Rom&nd</h3>
                     <a href="">查看更多>>></a>
                 </div>
             </div>
-            <div class="lab">
-                <img src="">
+            <div class="lab" id="3ce">
+                <img src="../product/3ce/3CE_img/3ce.jpg">
                 <div class="lab_card">
                     <h3>3CE</h3>
                     <a href="">查看更多>>></a>
@@ -79,15 +106,15 @@
             </div>
         </div>
         <div class="lab_group">
-            <div class="lab">
-                <img src="">
+            <div class="lab" id="innisfree">
+                <img src="../product/3ce/3CE_img/3ce.jpg">
                 <div class="lab_card">
-                    <h3>Espoir</h3>
+                    <h3>Innisfree</h3>
                     <a href="">查看更多>>></a>
                 </div>
             </div>
-            <div class="lab">
-                <img src="">
+            <div class="lab" id="skinfood">
+                <img src="../product/3ce/3CE_img/3ce.jpg">
                 <div class="lab_card">
                     <h3>SkinFood</h3>
                     <a href="">查看更多>>></a>
@@ -97,22 +124,24 @@
     </section>
 
     <!-- 新品上架 -->
-    <section class="new_product">
+    <section id="new">
         <table>
             <tr>
-                <th colspan="3" id="more_product"><b>相關產品</b></th>
+                <th colspan="3" id="more_product"><b>新品上架</b></th>
             </tr>
             <tr>
                 <td>
                     <figure>
                         <a href="">
-                            <img src="./img/taetae.jpg" alt="">
-                            <figcaption class="seemore">
-                                查看詳情
-                                <i class="bi bi-plus-circle"></i>
-                            </figcaption>
+                            <img src="../product/romand/rom&and_img/romand lip-1.jpg" alt="">
+                            <div class="overlay">
+                                <figcaption class="seemore">
+                                    查看詳情
+                                    <i class="bi bi-plus-circle"></i>
+                                </figcaption>
+                            </div>
                             <figcaption>
-                                <p>【新年限定】蒲公英蜜粉盒(2024龍年限定)</p>
+                                <b>【Romand】月亮修容盤</b>
                                 <p class="price">NT $200</p>
                                 <p class="rawprice">NT $420</p>
                             </figcaption>
@@ -122,13 +151,15 @@
                 <td>
                     <figure>
                         <a href="">
-                            <img src="./img/rom&and/romand lip-2.jpg" alt="">
-                            <figcaption class="seemore">
-                                查看詳情
-                                <i class="bi bi-plus-circle"></i>
-                            </figcaption>
+                            <img src="../product/skinfood/skinfood_img/skinfood_carrot-1.png" alt="">
+                            <div class="overlay">
+                                <figcaption class="seemore">
+                                    查看詳情
+                                    <i class="bi bi-plus-circle"></i>
+                                </figcaption>
+                            </div>
                             <figcaption>
-                                <p>Romand 霧面奶茶唇釉</p>
+                                <b>【Romand】霧面奶茶唇釉</b>
                                 <p class="price">NT $480</p>
                                 <p class="rawprice">NT $540</p>
                             </figcaption>
@@ -138,13 +169,15 @@
                 <td>
                     <figure>
                         <a href="">
-                            <img src="./img/taetae.jpg" alt="">
-                            <figcaption class="seemore">
-                                查看詳情
-                                <i class="bi bi-plus-circle"></i>
-                            </figcaption>
+                            <img src="../product/romand/rom&and_img/romand_base-1.jpg" alt="">
+                            <div class="overlay">
+                                <figcaption class="seemore">
+                                    查看詳情
+                                    <i class="bi bi-plus-circle"></i>
+                                </figcaption>
+                            </div>
                             <figcaption>
-                                <p>【新年限定】蒲公英蜜粉盒(2024龍年限定)</p>
+                                <b>【Espoir】晶鑽水光粉底液</b>
                                 <p class="price">NT $200</p>
                                 <p class="rawprice">NT $420</p>
                             </figcaption>
@@ -154,6 +187,25 @@
             </tr>
         </table>
     </section>
+
+    <footer>
+        <h2>logo</h2>
+        <div>
+            <a href=""><i class="bi bi-envelope-open"></i></a>
+            <a href=""><i class="bi bi-line"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+        </div>
+        <p>周一 - 周五 0800AM-1700PM/tel:04-********/fax:********</p>
+        <p>台中市南屯區公益路</p>
+        <br><br>
+        <p>2024 logo.ALL Rights Reserved</p>
+        <p id="company">國際有限公司|統編********</p>
+    </footer>
+
+
+    <script>
+    </script>
 
 </body>
 
