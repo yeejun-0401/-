@@ -35,3 +35,8 @@ nav li a:hover{
     color: rgba(220, 161, 108, 1);
     cursor: pointer;
 }
+
+.nav_lab{
+    display: block;
+    flex-direction: column;
+}
