@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>list-allproduct</title>
-    <link rel="stylesheet" href="./head&foot/header.css">
-    <link rel="stylesheet" href="./head&foot/footer.css">
-    <link rel="stylesheet" href="./product/product_css/more_product.css">
+    <link rel="stylesheet" href="../head&foot/header.css">
+    <link rel="stylesheet" href="../head&foot/footer.css">
+    <link rel="stylesheet" href="./aside.css">
+    <link rel="stylesheet" href="../product/product_css/more_product.css">
+    <link rel="stylesheet" href="../normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         article {
@@ -48,33 +50,17 @@
             padding: 20px;
         }
 
-        /*側邊品牌清單*/
-        #lab {
-            background-color: white;
-            border: 1px solid;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-
-        .btn {
-            font-size: 30px;
-        }
-
-        #labli {
-            display: none;
-            transform: translateX(-25%);
-            transition: 0.7s ease-out;
-        }
+        
     </style>
 </head>
 
 <body>
     <header>
-        <h1>clothes</h1>
+        <a href="../homepage/homepage.html"><h1>logo</h1></a>
         <div>
             <input type="text" placeholder="search">
             <a href=""><i class="bi bi-search icon"></i></a>
-            <a href="./login.html"><i class="bi bi-person-fill icon"></i></a>
+            <a href="../login.html"><i class="bi bi-person-fill icon"></i></a>
             <a href=""><i class="bi bi-cart4 icon"></i></a>
         </div>
         <nav>
@@ -82,7 +68,7 @@
                 <li><a href="./alllist.html">所有商品</a></li>
                 <li><a href="">最新商品</a></li>
                 <li><a href="">品牌總覽</a></li>
-                <li><a href="">購物須知</a></li>
+                <li><a href="../notice.html">購物須知</a></li>
             </ul>
         </nav>
     </header>
@@ -96,9 +82,9 @@
             <button id="lab" onclick=""><i class="bi bi-three-dots btn"></i></button>
             <div id="labli">
                 <ul>
-                    <li><a href="#3ce">3CE</a></li>
-                    <br>
                     <li><a href="#romand">rom&nd</a></li>
+                    <br>
+                    <li><a href="#3ce">3CE</a></li>
                     <br>
                     <li><a href="">innisfree</a></li>
                     <br>
@@ -114,9 +100,9 @@
             <tr id="romand">
                 <td>
                     <figure>
-                        <a href="./product/romand/romand_1.html">
+                        <a href="../product/romand/romand_1.html">
                             <div>
-                                <img src="./product/romand/rom&and_img/romand powder-1-1.jpg" alt="">
+                                <img src="../product/romand/rom&and_img/romand powder-1-1.jpg">
                             </div>
                             <div class="overlay">
                                 <figcaption class="seemore">
@@ -134,8 +120,8 @@
                 </td>
                 <td>
                     <figure>
-                        <a href="./product/romand/romand_2.html">
-                            <img src="./product/romand/rom&and_img/romand lip-1.jpg">
+                        <a href="../product/romand/romand_2.html">
+                            <img src="../product/romand/rom&and_img/romand lip-1.jpg">
                             <div class="overlay">
                                 <figcaption class="seemore">
                                     查看詳情
@@ -152,8 +138,8 @@
                 </td>
                 <td>
                     <figure>
-                        <a href="./product/romand/romand_3.html">
-                            <img src="./product/romand/rom&and_img/romand_base-1.jpg">
+                        <a href="../product/romand/romand_3.html">
+                            <img src="../product/romand/rom&and_img/romand_base-1.jpg">
                             <div class="overlay">
                                 <figcaption class="seemore">
                                     查看詳情
@@ -173,46 +159,10 @@
             <tr id="3ce">
                 <td>
                     <figure>
-                        <a href="./product/3ce/3CE.html">
+                        <a href="../product/3ce/3CE.html">
                             <div>
-                                <img src="./product/3ce/3CE_img/3ce-eye-1.jpg" alt="">
+                                <img src="../product/3ce/3CE_img/3ce-powder-3.png">
                             </div>
-                            <div class="overlay">
-                                <figcaption class="seemore">
-                                    查看詳情
-                                    <i class="bi bi-plus-circle"></i>
-                                </figcaption>
-                            </div>
-                            <figcaption>
-                                <b>【Romand】NU ZERO 氣墊粉餅</b>
-                                <p class="price">NT $240</p>
-                                <p class="rawprice">NT $520</p>
-                            </figcaption>
-                        </a>
-                    </figure>
-                </td>
-                <td>
-                    <figure>
-                        <a href="./product/romand/romand_2.html">
-                            <img src="./product/3ce/3CE_img/3ce-face-1.jpg">
-                            <div class="overlay">
-                                <figcaption class="seemore">
-                                    查看詳情
-                                    <i class="bi bi-plus-circle"></i>
-                                </figcaption>
-                            </div>
-                            <figcaption>
-                                <b>【Romand】霧面奶茶唇釉</b>
-                                <p class="price">NT $480</p>
-                                <p class="rawprice">NT $540</p>
-                            </figcaption>
-                        </a>
-                    </figure>
-                </td>
-                <td>
-                    <figure>
-                        <a href="./product/3ce/3CE.html">
-                            <img src="./product/3ce/3CE_img/3ce-powder-3.png">
                             <div class="overlay">
                                 <figcaption class="seemore">
                                     查看詳情
@@ -227,13 +177,49 @@
                         </a>
                     </figure>
                 </td>
+                <td>
+                    <figure>
+                        <a href="../product/3ce/3ce_2.html">
+                            <img src="../product/3ce/3CE_img/3ce-eye-fix1.png">
+                            <div class="overlay">
+                                <figcaption class="seemore">
+                                    查看詳情
+                                    <i class="bi bi-plus-circle"></i>
+                                </figcaption>
+                            </div>
+                            <figcaption>
+                                <b>【3CE】九宮格眼影盤</b>
+                                <p class="price">NT $769</p>
+                                <p class="rawprice">NT $1480</p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </td>
+                <td>
+                    <figure>
+                        <a href="./product/3ce/3CE.html">
+                            <img src="../product/3ce/3CE_img/3ce-face-1fix.jpg.png">
+                            <div class="overlay">
+                                <figcaption class="seemore">
+                                    查看詳情
+                                    <i class="bi bi-plus-circle"></i>
+                                </figcaption>
+                            </div>
+                            <figcaption>
+                                <b>【3CE】腮紅餅</b>
+                                <p class="price">NT $300</p>
+                                <p class="rawprice">NT $600</p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </td>
             </tr>
 
             <tr id="skinfood">
                 <td>
                     <figure>
-                        <a href="./product/3ce/3CE.html">
-                            <img src="./product/skinfood/skinfood_img/skinfood_carrot-1.png" alt="">
+                        <a href="../product/skinfood/skinfood_1.html">
+                            <img src="../product/skinfood/skinfood_img/skinfood_carrot-2.png">
                             <div class="overlay">
                                 <figcaption class="seemore">
                                     查看詳情
@@ -250,8 +236,8 @@
                 </td>
                 <td>
                     <figure>
-                        <a href="./product/skinfood/skinfood_2.html">
-                            <img src="./product/skinfood/skinfood_img/skinfood_acorn-1.png">
+                        <a href="../product/skinfood/skinfood_2.html">
+                            <img src="../product/skinfood/skinfood_img/skinfood_acorn-1.png">
                             <div class="overlay">
                                 <figcaption class="seemore">
                                     查看詳情
@@ -288,24 +274,7 @@
     <!--hover特效-->
 
 
-    <script>
-        //品牌選單btn
-        document.getElementById("lab").addEventListener('click', lablist);
-
-        let btn = true;
-        function lablist() {
-            // console.log("hi");
-            if (btn) {
-                document.getElementById("lab").innerHTML = '<i class="bi bi-chevron-left btn"></i>';
-                document.getElementById("labli").style.display = 'block';
-                btn = false;
-            } else {
-                document.getElementById("lab").innerHTML = '<i class="bi bi-three-dots btn"></i>';
-                document.getElementById("labli").style.display = 'none';
-                btn = true;
-            }
-        }
-    </script>
+    <script src="./label.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,39 @@
+.ad {
+    background-image: url(../img/back.png);
+    height: 60rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.7; */
+    position: relative;
+}
+
+.slogan {
+    font-size: 60px;
+    background-color: white;
+    color: rgba(122, 76, 55, 1);
+    rotate: -20deg;
+    height: 6rem;
+    width: 23rem;
+    position: absolute;
+}
+#slogan1{
+    margin-top: 10rem;
+    margin-left: 10rem;
+    padding: 15px;
+}
+#slogan2{
+    padding: 15px;
+    margin-top: 20rem;
+    margin-left: 25rem;
+}
+#shopping{
+    background-color: transparent;
+    color: black;
+    border: 2px solid;
+    font-size: 25px;
+    position: absolute;
+    margin-top: 25rem;
+    margin-left: 85rem;
+    cursor: pointer;
+    padding: 15px;
+}

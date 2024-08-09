@@ -1,60 +1,60 @@
-#bestlab{
-    background-color: rgba(231, 226, 219, 1);
-}
-.lab_group{
-    display: flex;
-    justify-content: center;
-}
-.lab_card{
+.lab{
     position: absolute;
-    /* display: none; */
-    margin: auto;
+    display: flex;
+}
+.lab img{
     width: 236px;
     height: 236px;
-    background-color: rgba(122, 76, 55, 1);
-    color: rgba(224, 209, 202, 1);
-    text-align: center;
-    visibility: hidden;
-    /* transform: translateX(200px); */
-}
-/* .lab_card:hover{
-    animation-name: yo;
-    animation-duration: 0.4s;
-    animation-iteration-count: 1; 
-} */
-.lab>img:hover+.lab_card{
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
     visibility: visible;
-    cursor: pointer;
-    transform: translateX(-200px);
-    transition: all 0.7s ease;
-    /* display: block; */
-}
-.lab_card h3{
-    font-size: 30px;
-    text-align: center;
-    padding-top: 20px;
-    text-decoration: underline;
-}
-.lab_card a{
-    text-decoration: none;
-    color: rgba(224, 209, 202, 1);
-    cursor: pointer;
-}
-.lab{
-    /* position: relative; */
-    display: flex;
-    margin: 40px;
-}
-/* .lab_card{
-    transition-duration: 0.4s;
-    transition-property: background-color, color, width ,height;
+    transition-duration: 0.1s;
+    transition-property: visibility;
     transition-timing-function: ease;
-} */
- /* @keyframes yo{
+}
+.lab_card{
+    background-color: rgba(145, 91, 66, 1);
+    color: rgba(224, 209, 202, 1);
+    border-radius: 50%;
+    width: 236px;
+    height: 236px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 236px;
+    cursor: pointer;
+}
+@keyframes img_none{
     from{
-        width: 0px;
+        opacity: 100%;
+    }to{
+        opacity: 0%;
     }
-    to{
-        width: 236px;
-    }
- } */
+}
+.lab img:hover{
+    animation-name: img_none;
+    animation-duration: .3s;
+    animation-fill-mode: both;
+}
+#romand{
+    /* margin-left: 75rem;
+    margin-top: 3rem; */
+    margin-left: 10rem;
+    margin-top: 40rem;
+}
+#ce{
+    /* margin-left: 95rem;
+    margin-top: 10rem; */
+    margin-left: 35rem;
+    margin-top: 40rem;
+}
+#innisfree{
+    /* margin-left: 75rem;
+    margin-top: 25rem; */
+    margin-left: 75rem;
+    margin-top: 40rem;
+}
+#skinfood{
+    margin-left: 95rem;
+    margin-top: 40rem;
+}

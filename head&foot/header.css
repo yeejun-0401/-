@@ -1,9 +1,11 @@
 h1{
     color: rgba(122, 76, 55, 1);
-    position: relative;
-    left: 20px;
-    top: 10px;
-    font-size: 56px;
+    margin: 0px;
+}
+header>a{
+    margin-top: 0px;
+    font-size: 30px;
+    text-decoration: none;
 }
 header>div{
     position: absolute;
@@ -15,9 +17,12 @@ header>div{
     color: rgba(122, 76, 55, 1);
     padding: 5px;
 }
+nav{
+    margin-left: 20rem;
+}
 nav li{
     list-style-type: none;
-    padding: 9rem;
+    padding-left: 9rem;
     display: inline;
 }
 nav li a{

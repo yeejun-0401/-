@@ -1,0 +1,60 @@
+/*側邊品牌清單*/
+#lab {
+    background-color: white;
+    border: 1px solid rgb(143, 142, 142);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn {
+    font-size: 30px;
+}
+
+#lab:hover{
+    background-color: rgb(233, 233, 233);
+}
+
+
+/*製作動畫效果(自訂)*/
+/*滑出*/
+@keyframes slideout{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-250px);
+    }
+}
+
+.slide_a{
+    animation-name: slideout;
+}
+
+.animated{
+    animation-duration: .4s;
+    animation-fill-mode: both;
+    /* 依據動畫的次數或播放方向，保持在第一個影格或最後一個影格狀態 */
+    /* animation-fill-mode:forwards;保持在最後一個影格狀態 */
+    /* animation-fill-mode:backwards;保持在第一個影格狀態 */
+
+    /* animation-delay: 1s; 動畫延遲*/
+}
+/*滑入*/
+@keyframes slidein{
+    from{
+        transform:translateX(-250px);
+    }
+    to{
+        transform:translateX(0);
+    }
+}
+
+.slide_b{
+    animation-name: slidein;
+}
+
+/*固定lab出現位置*/
+#labli{
+    position: absolute;
+    display: none;
+}

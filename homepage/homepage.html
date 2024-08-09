@@ -9,17 +9,11 @@
     <link rel="stylesheet" href="../head&foot/footer.css">
     <link rel="stylesheet" href="./card.css">
     <link rel="stylesheet" href="./label.css">
+    <link rel="stylesheet" href="./homead.css">
+    <link rel="stylesheet" href="../normalize.css">
     <link rel="stylesheet" href="../product/product_css/more_product.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
-        .ad {
-            background-image: url(../img/back.png);
-            height: 70rem;
-            background-repeat: no-repeat;
-            background-size: cover;
-            opacity: 0.7;
-        }
-
         #new {
             background-color: rgba(231, 226, 219, 1);
             padding-bottom: 60px;
@@ -33,18 +27,18 @@
 
 <body>
     <header>
-        <h1>logo</h1>
+        <a href="./homepage.html"><h1>logo</h1></a>
         <div>
             <input type="text" placeholder="search">
             <a href=""><i class="bi bi-search icon"></i></a>
-            <a href="./login.html"><i class="bi bi-person-fill icon"></i></a>
+            <a href="../login.html"><i class="bi bi-person-fill icon"></i></a>
             <a href=""><i class="bi bi-cart4 icon"></i></a>
         </div>
         <nav>
             <ul>
-                <li><a href="./alllist.html">所有商品</a></li>
+                <li><a href="../list/list.html">所有商品</a></li>
                 <li><a href="#new">最新商品</a></li>
-                <li><a href="#bestlab">品牌總覽</a></li>
+                <li><a href="#slogan1">品牌總覽</a></li>
                 <li><a href="../notice.html">購物須知</a></li>
             </ul>
         </nav>
@@ -52,8 +46,31 @@
 
     <!-- 首頁圖 -->
     <section class="ad">
-        <p>歡慶七夕</p>
-        <p>官網限定優惠</p>
+        <div id="slogan1" class="slogan">
+            歡慶七夕
+            <i class="bi bi-heart-fill"></i>
+        </div>
+        <div id="slogan2" class="slogan">官網限定優惠</div>
+        <button id="shopping">
+            view more
+            <i class="bi bi-chevron-double-right"></i>
+        </button>
+        <div class="lab" id="romand">
+            <img src="../product/romand/rom&and_img/romand lip-1.jpg">
+            <div class="lab_card">Rom&nd</div>
+        </div>
+        <div class="lab" id="ce">
+            <img src="../product/3ce/3CE_img/3ce.jpg">
+            <div class="lab_card">3CE</div>
+        </div>
+        <div class="lab" id="innisfree">
+            <img src="../product/innisfree/innisfree.jfif">
+            <div class="lab_card">Innisfree</div>
+        </div>
+        <div class="lab" id="skinfood">
+            <img src="../product/skinfood/skinfood_img/220318_carrotpad_3.png">
+            <div class="lab_card">SkinFood</div>
+        </div>
     </section>
 
 
@@ -101,43 +118,6 @@
         </div>
     </div>
 
-    <!-- 品牌總覽 
-     滑鼠滑過會有卡片(有斜角)顯示品牌名稱及查看更多連結-->
-    <!-- <section id="bestlab">
-        <h3 style="margin: 0px;">精選品牌Best labels</h3>
-        <div class="lab_group">
-            <div class="lab" id="romand">
-                <img src="../product/3ce/3CE_img/3ce.jpg">
-                <div class="lab_card">
-                    <h3>Rom&nd</h3>
-                    <a href="">查看更多>>></a>
-                </div>
-            </div>
-            <div class="lab" id="3ce">
-                <img src="../product/3ce/3CE_img/3ce.jpg">
-                <div class="lab_card">
-                    <h3>3CE</h3>
-                    <a href="">查看更多>>></a>
-                </div>
-            </div>
-        </div>
-        <div class="lab_group">
-            <div class="lab" id="innisfree">
-                <img src="../product/3ce/3CE_img/3ce.jpg">
-                <div class="lab_card">
-                    <h3>Innisfree</h3>
-                    <a href="">查看更多>>></a>
-                </div>
-            </div>
-            <div class="lab" id="skinfood">
-                <img src="../product/3ce/3CE_img/3ce.jpg">
-                <div class="lab_card">
-                    <h3>SkinFood</h3>
-                    <a href="">查看更多>>></a>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <!-- 新品上架 -->
     <section id="new">
@@ -148,43 +128,7 @@
             <tr>
                 <td>
                     <figure>
-                        <a href="">
-                            <img src="../product/romand/rom&and_img/romand lip-1.jpg" alt="">
-                            <div class="overlay">
-                                <figcaption class="seemore">
-                                    查看詳情
-                                    <i class="bi bi-plus-circle"></i>
-                                </figcaption>
-                            </div>
-                            <figcaption>
-                                <b>【Romand】月亮修容盤</b>
-                                <p class="price">NT $200</p>
-                                <p class="rawprice">NT $420</p>
-                            </figcaption>
-                        </a>
-                    </figure>
-                </td>
-                <td>
-                    <figure>
-                        <a href="">
-                            <img src="../product/skinfood/skinfood_img/skinfood_carrot-1.png" alt="">
-                            <div class="overlay">
-                                <figcaption class="seemore">
-                                    查看詳情
-                                    <i class="bi bi-plus-circle"></i>
-                                </figcaption>
-                            </div>
-                            <figcaption>
-                                <b>【Romand】霧面奶茶唇釉</b>
-                                <p class="price">NT $480</p>
-                                <p class="rawprice">NT $540</p>
-                            </figcaption>
-                        </a>
-                    </figure>
-                </td>
-                <td>
-                    <figure>
-                        <a href="">
+                        <a href="../product/romand/romand_3.html">
                             <img src="../product/romand/rom&and_img/romand_base-1.jpg" alt="">
                             <div class="overlay">
                                 <figcaption class="seemore">
@@ -193,9 +137,45 @@
                                 </figcaption>
                             </div>
                             <figcaption>
-                                <b>【Espoir】晶鑽水光粉底液</b>
-                                <p class="price">NT $200</p>
-                                <p class="rawprice">NT $420</p>
+                                <b>【Romand】月亮修容盤</b>
+                                <p class="price">NT $269</p>
+                                <p class="rawprice">NT $599</p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </td>
+                <td>
+                    <figure>
+                        <a href="../product/skinfood/skinfood_2.html">
+                            <img src="../product/skinfood/skinfood_img/skinfood_acorn-1.png" alt="">
+                            <div class="overlay">
+                                <figcaption class="seemore">
+                                    查看詳情
+                                    <i class="bi bi-plus-circle"></i>
+                                </figcaption>
+                            </div>
+                            <figcaption>
+                                <b>【SkinFood】純素橡樹子毛孔胜肽乳霜</b>
+                                <p class="price">NT $476</p>
+                                <p class="rawprice">NT $840</p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </td>
+                <td>
+                    <figure>
+                        <a href="../product/3ce/3ce_2.html">
+                            <img src="../product/3ce/3CE_img/3ce-eye-7.png" alt="">
+                            <div class="overlay">
+                                <figcaption class="seemore">
+                                    查看詳情
+                                    <i class="bi bi-plus-circle"></i>
+                                </figcaption>
+                            </div>
+                            <figcaption>
+                                <b>【3CE】九宮格眼影盤</b>
+                                <p class="price">NT $769</p>
+                                <p class="rawprice">NT $1480</p>
                             </figcaption>
                         </a>
                     </figure>
