@@ -73,12 +73,6 @@ nav li:hover {
     display: block;
     padding: 5px;
     width: auto;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 .nav_lab li:hover {
@@ -106,4 +100,5 @@ nav li:hover {
     text-align: center;
     background-color: rgba(122, 76, 55, 1);
     color: rgba(224, 209, 202, 1);
+    padding: 1px;
 }
