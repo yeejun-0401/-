@@ -34,6 +34,14 @@ function scrollto3ce(){
     document.getElementById("3ce").scrollIntoView({behavior:"smooth"});
 }
 
+//scroll to innisfree
+document.getElementById("scrollins").addEventListener('click',scrolltoins);
+
+function scrolltoins(){
+    // console.log("hi");
+    document.getElementById("innisfree").scrollIntoView({behavior:"smooth"});
+}
+
 //scroll to skinfood
 document.getElementById("scrollsf").addEventListener('click',scrolltosf);
 
