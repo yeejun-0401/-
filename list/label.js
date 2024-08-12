@@ -17,3 +17,27 @@ function lablist() {
         btn = true;
     }
 }
+
+//scroll to romand
+document.getElementById("scrollromand").addEventListener('click',scrolltoromand);
+
+function scrolltoromand(){
+    // console.log("hi");
+    document.getElementById("romand").scrollIntoView({behavior:"smooth"});
+}
+
+//scroll to 3ce
+document.getElementById("scroll3ce").addEventListener('click',scrollto3ce);
+
+function scrollto3ce(){
+    // console.log("hi");
+    document.getElementById("3ce").scrollIntoView({behavior:"smooth"});
+}
+
+//scroll to skinfood
+document.getElementById("scrollsf").addEventListener('click',scrolltosf);
+
+function scrolltosf(){
+    // console.log("hi");
+    document.getElementById("skinfood").scrollIntoView({behavior:"smooth"});
+}

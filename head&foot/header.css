@@ -1,42 +1,109 @@
-h1{
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@600&display=swap');
+h1 {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
     color: rgba(122, 76, 55, 1);
     margin: 0px;
+    padding-left: 60px;
 }
-header>a{
+
+header>a {
     margin-top: 0px;
     font-size: 30px;
     text-decoration: none;
+    display: inline-block;
 }
-header>div{
+
+header>div {
     position: absolute;
     right: 20px;
     top: 30px;
 }
-.icon{
+
+.icon {
     font-size: 30px;
     color: rgba(122, 76, 55, 1);
     padding: 5px;
 }
-nav{
+
+nav {
     margin-left: 20rem;
 }
-nav li{
+
+nav li {
     list-style-type: none;
     padding-left: 9rem;
     display: inline;
-}
-nav li a{
     text-decoration: none;
     text-align: center;
     color: black;
     font-size: 25px;
 }
-nav li a:hover{
+
+nav li a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+}
+
+nav li a:hover {
     color: rgba(220, 161, 108, 1);
     cursor: pointer;
 }
 
-.nav_lab{
+nav li:hover {
+    color: rgba(220, 161, 108, 1);
+    cursor: pointer;
+}
+
+.nav_lab {
+    /* display: block; */
+    /* flex-direction: column; */
+    width: 10rem;
+    position: absolute;
+    border: 1px solid;
+    border-top: 0px;
+    transition: 0.5s ease;
+    /* left: 60px; */
+    padding: 0px;
+}
+
+.nav_lab li {
+    font-size: 20px;
     display: block;
-    flex-direction: column;
+    padding: 5px;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.nav_lab li:hover {
+    background-color: rgba(220, 161, 108, 1);
+    color: white;
+}
+
+#viewlab {
+    position: relative;
+}
+
+#viewlab:hover .nav_lab {
+    bottom: 0;
+    height: 100%;
+}
+.bi-cart4{
+    position: relative;
+}
+#sum{
+    position: absolute;
+    right: 1px;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgba(122, 76, 55, 1);
+    color: rgba(224, 209, 202, 1);
 }

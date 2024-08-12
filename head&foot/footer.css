@@ -1,18 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@600&display=swap');
 footer{
     background-color: rgba(145, 91, 66, 1);
     color: rgba(224, 209, 202, 1);
     text-align: center;
+    position: relative;
 }
 footer h2{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
     padding: 20px;
     font-size: 40px;
     margin-top: 0px;
 }
-footer div a{
+footer div i{
     padding: 20px;
     color: rgba(224, 209, 202, 1);
     font-size: 30px;
 }
 #company{
     padding: 20px;
+}
+
+.more{
+    text-decoration: none;
+    color: rgba(224, 209, 202, 1);
+    border-right: 1px solid rgba(224, 209, 202, 1);
+    padding-right: 10px;
+    font-size: 18px;
+}
+.info1{
+    position: absolute;
+    left: 100px;
+    bottom: 30px;
+}
+.info2{
+    position: absolute;
+    right: 100px;
+    bottom: 30px;
 }
